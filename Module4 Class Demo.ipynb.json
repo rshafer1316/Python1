@@ -1,0 +1,2244 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Strings"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'C'"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fname = \"Cookie\"\n",
+    "fname[-6]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "first_name = \"Cookie\"\n",
+    "last_name = \"Monster\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "CookieMonster\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(first_name + last_name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'e'"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "first_name[-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "  Learn To Code In Python \n",
+      "  learn to code in python \n"
+     ]
+    }
+   ],
+   "source": [
+    "# title() method returns a string with the first character in upper case for every word in the string\n",
+    "\n",
+    "message = \"  learn to code in python \"\n",
+    "print(message.title())\n",
+    "print(message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "  LEARN TO CODE IN PYTHON \n",
+      "  learn to code in python \n"
+     ]
+    }
+   ],
+   "source": [
+    "# upper() method returns a string in all upper cases\n",
+    "\n",
+    "message = \"  learn to code in python \"\n",
+    "msg = message.upper()\n",
+    "print(msg)\n",
+    "print(message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "  LEARN TO CODE IN PYTHON \n",
+      "  learn to code in python \n"
+     ]
+    }
+   ],
+   "source": [
+    "print(msg)\n",
+    "print(msg.lower())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "learn to code in python\n",
+      "  learn to code in python \n"
+     ]
+    }
+   ],
+   "source": [
+    "# strip() method returns a string after removing all leading and following blanks in the string\n",
+    "\n",
+    "message = \"  learn to code in python \"\n",
+    "print(message.strip())\n",
+    "print(message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "learn to code in python \n",
+      "  learn to code in python \n"
+     ]
+    }
+   ],
+   "source": [
+    "# lstrip() method returns a string after removing all leading blanks in the string\n",
+    "\n",
+    "message = \"  learn to code in python \"\n",
+    "print(message.lstrip())\n",
+    "print(message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "  learn to code in python\n",
+      "  learn to code in python        \n"
+     ]
+    }
+   ],
+   "source": [
+    "# rstrip() method returns a string after removing all following blanks in the string\n",
+    "\n",
+    "message = \"  learn to code in python        \"\n",
+    "print(message.rstrip())\n",
+    "print(message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**learn*to*code*in*python********\n",
+      "  learn to code in python        \n"
+     ]
+    }
+   ],
+   "source": [
+    "# replace() method returns a string with old substring replaced with new substring\n",
+    "\n",
+    "message = \"  learn to code in python        \"\n",
+    "print(message.replace(' ', '*'))\n",
+    "print(message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "learn to code\n",
+      "Learn to code\n"
+     ]
+    }
+   ],
+   "source": [
+    "# capitalize() method returns a string with the first character in upper case\n",
+    "\n",
+    "message = \"learn to code\"\n",
+    "print(message)\n",
+    "print(message.capitalize())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "learn to code\n",
+      " learn to code\n"
+     ]
+    }
+   ],
+   "source": [
+    "# what is happening?\n",
+    "\n",
+    "message = \" learn to code\"\n",
+    "print(message)\n",
+    "print(message.capitalize())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Python'"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"python\".capitalize()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<function str.upper()>"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"python\".upper"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "yeah\n",
+      "yeah\n"
+     ]
+    }
+   ],
+   "source": [
+    "# center() method returns a centered string\n",
+    "\n",
+    "\n",
+    "message = \"yeah\"\n",
+    "print(message)\n",
+    "print(message.center(2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      ">>>  learn to code to in python <<<\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# count() method returns the occurences of the substring in the given string\n",
+    "\n",
+    "message = \"  learn to code to in python \"\n",
+    "print(\">>>\"+message+\"<<<\")\n",
+    "message.count(\"to\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "message.count(\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "message.count(\"code\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I love Python!\n",
+      "e\n"
+     ]
+    }
+   ],
+   "source": [
+    "message = \"I love Python!\"\n",
+    "print(message)\n",
+    "print(message[5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'t'"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "message[-5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndexError",
+     "evalue": "string index out of range",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mIndexError\u001b[0m                                Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-45-c8ad89e9250f>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mmessage\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m20\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mIndexError\u001b[0m: string index out of range"
+     ]
+    }
+   ],
+   "source": [
+    "message[20]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "14"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# len() function returns the number of items in an object\n",
+    "\n",
+    "\n",
+    "len(\"message\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(\"99.99\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(\"\\'\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "object of type 'float' has no len()",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-52-f3ff1f43fff3>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m123.56789\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m: object of type 'float' has no len()"
+     ]
+    }
+   ],
+   "source": [
+    "len(123.56789)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "object of type 'int' has no len()",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-53-a95e54e61f62>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m123\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m: object of type 'int' has no len()"
+     ]
+    }
+   ],
+   "source": [
+    "len(123)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Exercise 1\n",
+    "Write a program to right-justify text where the maximum number of characters per line is 50."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "beautiful is better than ugly.\n"
+     ]
+    }
+   ],
+   "source": [
+    "line1 = \"   beautiful is better than ugly.   \"\n",
+    "print(line1.strip())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12345678901234567890123456789012345678901234567890\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# fix any errors\n",
+    "MAXCHAR = 50\n",
+    "\n",
+    "# write code to remove leading and following blanks\n",
+    "line = line1.strip()\n",
+    "\n",
+    "\n",
+    "no_char = int(len(\"line\"))          # returns a number of charcters in line \n",
+    "\n",
+    "# find the number of blanks to fill the line\n",
+    "no_blank = no_char - MAXCHAR\n",
+    "\n",
+    "\n",
+    "\n",
+    "# fill the leading blanks\n",
+    "result = \"--\" * no_blank \n",
+    "\n",
+    "# concatenate the text to leading blanks\n",
+    "\n",
+    "\n",
+    "\n",
+    "# print out\n",
+    "print(\"1234567890\"*5)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-45\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(no_blank)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12345678901234567890123456789012345678901234567890\n",
+      "                    beautiful is better than ugly.\n"
+     ]
+    }
+   ],
+   "source": [
+    "max_char = 50\n",
+    "line = line1.strip()\n",
+    "no_char = int(len(line))            # returns a number of charcters in line \n",
+    "no_blanks = MAXCHAR - no_char\n",
+    "\n",
+    "result = \" \" * no_blanks\n",
+    "result += line\n",
+    "\n",
+    "print(\"1234567890\"*5)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                    beautiful is better than ugly.\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Formatted String\n",
+    "    {}  : a place holder\n",
+    "    ,   : shows commas in thousands place\n",
+    "    .2f : shows 2 digits after the decimal point\n",
+    "    .2% : shows 2 digits after the decimal point in percentage (%)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I love Python\n",
+      "I love {name}\n"
+     ]
+    }
+   ],
+   "source": [
+    "message = \"I love {name}\"\n",
+    "print(message.format(name = \"Python\"))\n",
+    "print(message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I love Python\n",
+      "I love Python\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"I love {0}\".format(\"Python\"))\n",
+    "print(\"I love {}\".format(\"Python\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I love to eat and drink\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"I love {} and {}\".format(\"to eat\", \"drink\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I love to eat and drink\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"I love {one} and {two}\".format(two=\"drink\", one=\"to eat\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "My name is Elmo.\n"
+     ]
+    }
+   ],
+   "source": [
+    "msg = \"My name is {fname}.\".format(fname=\"Elmo\")\n",
+    "print(msg)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "msg = \"Your name is {fname} and you are {age}.\".format(fname=\"Big Bird\", age=5)\n",
+    "print(msg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "msg = \"Your name is {0} and you are {1}.\".format(\"Count Von Count\", 999)\n",
+    "print(msg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "msg = \"Your name is {} and you are {}.\".format(\"Cookie Monster\", 9)\n",
+    "print(msg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# :f for fixed point number, default with 6 decimals\n",
+    "\n",
+    "price = 9.99\n",
+    "msg = \"The price is ${:f}\"\n",
+    "print(msg.format(price))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# :.2f for fixed point number, use a period followed by a number to specify the number of decimals\n",
+    "\n",
+    "msg = \"The price is ${:.2f}\"\n",
+    "print(msg.format(price))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# :.2f for fixed point number, use a period followed by a number to specify the number of decimals\n",
+    "\n",
+    "msg = \"The price is ${:.1f}\"\n",
+    "print(msg.format(price))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# :, to display comma as a thousand separator\n",
+    "\n",
+    "msg = \"Total price is ${:,}\"\n",
+    "print(msg.format(price*10000))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "msg = \"Total price is ${:,.2f}\"\n",
+    "print(msg.format(price*10000))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "msg = \"Current interest rate is {:%}\"\n",
+    "print(msg.format(0.0516))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "msg = \"Current interest rate is {:.2%}\"\n",
+    "print(msg.format(0.0516))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "msg = \"Current interest rate is {:.1%}\"\n",
+    "print(msg.format(0.0516))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Formatted String"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "first_name = \"Big\"\n",
+    "last_name = \"Bird\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The main character is {first_name} {last_name}.\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"The main character is {first_name} {last_name}.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The main character is Big Bird.\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"The main character is {first_name} {last_name}.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Amount is $1,234,567.891\n"
+     ]
+    }
+   ],
+   "source": [
+    "amount = 1234567.89123\n",
+    "print(f\"Amount is ${amount:,.3f}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Amount is 123,456,789.123%\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"Amount is {amount:,.3%}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1234567.89123"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "amount"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Subtotal: $5,299.47\n"
+     ]
+    }
+   ],
+   "source": [
+    "unit_price = 99.99\n",
+    "qty = 53\n",
+    "print(f\"Subtotal: ${unit_price * qty :,.2f}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Subtotal: $5,299.5\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"Subtotal: ${unit_price * qty :,.1f}\")  # commas in thousands place"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Subtotal: $5299.47\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"Subtotal: ${unit_price * qty :.2f}\") #2 digits after the decimal point"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Subtotal: $5,299.47\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"Subtotal: ${unit_price * qty :,.2f}\") #in dollar amount format"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "123.451\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 123.45143\n",
+    "print(f\"{x:.3f}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Current rate: 3.26%\n"
+     ]
+    }
+   ],
+   "source": [
+    "rate = 0.03255    # morgage rate 3.255%\n",
+    "print(f\"Current rate: {rate:.2%}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Current rate: 3.255000000%\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"Current rate: {rate:.9%}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a number:\n",
+      ">25\n",
+      "Enter next number:\n",
+      ">5\n",
+      "25 * 5 = 125\n"
+     ]
+    }
+   ],
+   "source": [
+    "prompt = \">\"\n",
+    "print(\"Enter a number:\")\n",
+    "numb1 = int(input(prompt))\n",
+    "print(\"Enter next number:\")\n",
+    "numb2 = int(input(prompt))\n",
+    "total = numb1 * numb2\n",
+    "print(f\"{numb1} * {numb2} = {total}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "25 + 5 = 30\n",
+      "25 - 5 = 20\n",
+      "25 * 5 = 125\n",
+      "25 / 5 = 5.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"{numb1} + {numb2} = {numb1 + numb2}\")\n",
+    "print(f\"{numb1} - {numb2} = {numb1 - numb2}\")\n",
+    "print(f\"{numb1} * {numb2} = {numb1 * numb2}\")\n",
+    "print(f\"{numb1} / {numb2} = {numb1 / numb2}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5.0"
+      ]
+     },
+     "execution_count": 67,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Exercise 2\n",
+    "Write a program to find out user's annual salary. Then compute user's monthly salary and bi-weekly salary.\n",
+    "Display your results in nice formatted output."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Identify IPO\n",
+    "\n",
+    "input: Find the user's salary\n",
+    "\n",
+    "process in pseudocode:\n",
+    "Divide the the salary by 12 months and 26 weeks \n",
+    "\n",
+    "\n",
+    "\n",
+    "output: The output is the montly and bi-weekly salaries.\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Convert your pseudocode in to Python code"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter your salary: 40000\n",
+      "Your monthly salary is $3,333.33\n",
+      "Your biweekly salary is $1,538.46\n"
+     ]
+    }
+   ],
+   "source": [
+    "salary = int(input(\"Enter your salary: \"))\n",
+    "\n",
+    "monthly = salary / 12\n",
+    "biweekly = salary / 26\n",
+    "\n",
+    "print(f\"Your monthly salary is ${monthly:,.2f}\")\n",
+    "print(f\"Your biweekly salary is ${biweekly:,.2f}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Scientific Number Notation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5.800000e+04\n"
+     ]
+    }
+   ],
+   "source": [
+    "no1 = 58000\n",
+    "print(f\"{no1:e}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5.8e+04\n",
+      "5.80e+04\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"{no1:.1e}\")\n",
+    "print(f\"{no1:.2e}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1.2e-04\n",
+      "1.230e-04\n"
+     ]
+    }
+   ],
+   "source": [
+    "no2 = 0.000123\n",
+    "\n",
+    "print(f\"{no2:.1e}\")\n",
+    "print(f\"{no2:.3e}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1234.56789\n",
+      "1,234.56789\n",
+      "1,234.57\n"
+     ]
+    }
+   ],
+   "source": [
+    "no3 = 1.23456789e3\n",
+    "print(f\"{no3}\")\n",
+    "print(f\"{no3:,}\")\n",
+    "print(f\"{no3:,.2f}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "no3 = 1.23456e-3\n",
+    "print(f\"{no3}\")\n",
+    "print(f\"{no3:,}\")\n",
+    "print(f\"{no3:,.3f}\")\n",
+    "print(f\"{no3:,.2f}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "no3 = 9e-3\n",
+    "print(f\"{no3}\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Exercise 3\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6.2e+05\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 1. Write 620000 in a scientific number notation\n",
+    "# 6.2e+5\n",
+    "noc = 620000\n",
+    "print(f\"{620000:.1e}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "9.1e-03\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2. write 0.0091 in a scientific number notation\n",
+    "# 9.1e-3\n",
+    "\n",
+    "print(f\"{0.0091:.1e}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Exercise 4\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 1. Convert 217 to a binary number using FLOOR-DIVISION and MOD arithmetic operations\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "108\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2 to the power of 7\n",
+    "print(217 // 2)\n",
+    "print(217 % 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "54\n",
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 6\n",
+    "print(108 // 2)\n",
+    "print(108 % 2)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "27\n",
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 5\n",
+    "print(54 // 2)\n",
+    "print(54 % 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "13\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 4\n",
+    "print(27 // 2)\n",
+    "print(27 % 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 3\n",
+    "print(13 // 2)\n",
+    "print (13 % 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 2\n",
+    "print(6 // 2)\n",
+    "print(6 % 2)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 1\n",
+    "print (3 // 2)\n",
+    "print (3 % 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 0\n",
+    "print(1 // 2)\n",
+    "print(1 % 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "217\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Now, assemble your answer\n",
+    "print(0b11011001)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'0b11011001'"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bin(217)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### 2. Convert 0b1110 0011 to a decimal number\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1.2"
+      ]
+     },
+     "execution_count": 82,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "128\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2 to the power of 7\n",
+    "power7 = 1 * (2**7)\n",
+    "print(power7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "32\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 5\n",
+    "power5 = 1 * (2**5)\n",
+    "print(power5)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "64\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 6\n",
+    "power6 = 1 * (2**6)\n",
+    "print(power6)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 4\n",
+    "power4 = 0 * (2**4)\n",
+    "print(power4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 3\n",
+    "power3 = 0 * (2**3)\n",
+    "print(power3)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 2\n",
+    "power2 = 0 * (2**2)\n",
+    "print(power2)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 1\n",
+    "power1 = 1 * (2**1)\n",
+    "print(power1)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# power of 0\n",
+    "power0 = 1 * (2**0)\n",
+    "print(power0)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "227\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Now, assemble your answer\n",
+    "power = power7 + power6 + power5 + power4 + power3 + power2 + power1 + power0\n",
+    "print(power)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Use Data Type Casting"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "155"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "numb = 0b10011011\n",
+    "int(numb)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "155"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(0b10011011)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'0b10011011'"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bin(155)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(bin(153))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "342391"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "numb = 0o01234567\n",
+    "int(numb)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'0o1234567'"
+      ]
+     },
+     "execution_count": 64,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "oct(342391)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'0x99'"
+      ]
+     },
+     "execution_count": 65,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "numb = 153\n",
+    "hex(153)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "155"
+      ]
+     },
+     "execution_count": 66,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(\"0b10011011\", 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2101769"
+      ]
+     },
+     "execution_count": 67,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(\"0o10011011\", 8)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "342391"
+      ]
+     },
+     "execution_count": 68,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(\"0o1234567\", 8)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "523"
+      ]
+     },
+     "execution_count": 69,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(0x20b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "11"
+      ]
+     },
+     "execution_count": 70,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(\"1011\", 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "521"
+      ]
+     },
+     "execution_count": 71,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(\"1011\", 8)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4113"
+      ]
+     },
+     "execution_count": 72,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(\"1011\", 16)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Binary 1011 is integer 11\n",
+      "Octal 1011 is integer 521\n",
+      "Hexa 1011 is integer 4113\n"
+     ]
+    }
+   ],
+   "source": [
+    "numb = \"1011\"\n",
+    "print(f\"Binary {numb} is integer {int(numb, 2)}\\nOctal {numb} is integer {int(numb, 8)}\\nHexa {numb} is integer {int(numb,16)}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
