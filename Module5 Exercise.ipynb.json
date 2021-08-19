@@ -1,0 +1,213 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1. Round 4.5667 to the nearest hundreth using a build-in function, round()."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4.57"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "round(4.5667, 2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2. Convert \"657\" to an integer data type"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "657\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(int(\"657\"))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3.\n",
+    "Write a program to get two numbers from a user. Then, create a secret code where a code consists of 6 numbers and each number is randomly generated number between two numbers from a user. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "9\n",
+      "6\n",
+      "6\n",
+      "Pick a number from 1-96\n",
+      "6\n",
+      "Pick a number from 1-98\n",
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random as rand\n",
+    "print(rand.randint(1, 9))\n",
+    "print(rand.randint(1, 9))\n",
+    "print(rand.randint(1, 9))\n",
+    "print(rand.randint(1, 9))\n",
+    "print(int(input(\"Pick a number from 1-9\")))\n",
+    "print(int(input(\"Pick a number from 1-9\")))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "4.\n",
+    "Write a program to center align below text where number of characters per line is 40:\n",
+    "\n",
+    "    Hickory, dickory, dock,\n",
+    "    The mouse ran up the clock.\n",
+    "    The clock struck one,\n",
+    "    The mouse ran down,\n",
+    "    Hickory, dickory, dock\n",
+    "\n",
+    "<b>Do not use string's center method! </b>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "        Hickory, dickory, dock,         \n",
+      "      The mouse ran up the clock.       \n",
+      "         The clock struck one,          \n",
+      "          The mouse ran down,           \n",
+      "         Hickory, dickory, dock         \n"
+     ]
+    }
+   ],
+   "source": [
+    "line1 = \"Hickory, dickory, dock,\" \n",
+    "line2 = \"The mouse ran up the clock.\"\n",
+    "line3 = \"The clock struck one,\"\n",
+    "line4 = \"The mouse ran down,\"\n",
+    "line5 = \"Hickory, dickory, dock\"\n",
+    "\n",
+    "print(line1.center(40))\n",
+    "print(line2.center(40))\n",
+    "print(line3.center(40))\n",
+    "print(line4.center(40))\n",
+    "print(line5.center(40))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "5. Write a function to calculate the miles per gallon.\n",
+    "Get a miles driven and gallons used from a user and call your function to calculate the miles per gallon. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "miles traveled33\n",
+      "gallons used3\n",
+      "You have driven {mpg} mile per gallon.\n"
+     ]
+    }
+   ],
+   "source": [
+    "def compute (mt, gu):\n",
+    "    \n",
+    "    mpg = mt / gu\n",
+    "    \n",
+    "    return mpg\n",
+    "\n",
+    "    \n",
+    "mt = float(input(\"miles traveled\"))\n",
+    "gu = float(input(\"gallons used\"))    \n",
+    "mpg = compute(mt, gu)\n",
+    "print(\"You have driven {mpg} mile per gallon.\")\n",
+    " \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
