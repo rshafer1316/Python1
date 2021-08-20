@@ -1,6 +1,16 @@
 {
  "cells": [
   {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import nbconvert\n",
+    "nbconvert.NotebookExporter.output_mimetype = 'application/x-ipynb'"
+   ]
+  },
+  {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
